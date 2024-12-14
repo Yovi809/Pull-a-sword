@@ -1,0 +1,146 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("Satria hub | pull a sword", "Default")
+
+local tab = DrRayLibrary.newTab("Main Tab", "ImageIdHere")
+
+tab.newButton("infinite yield", "Click me!", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+tab.newToggle("auto farm", "Toggle! (prints the state)", true, function(toggleState)
+    if toggleState then
+        _G.auto = true
+    
+    
+    while _G.auto do
+local args = {
+    [1] = "Click",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ClickEvent"):FireServer(unpack(args))
+wait(0.1)
+end
+    else
+        _G.auto = false
+    
+    
+    while _G.auto do
+local args = {
+    [1] = "Click",
+    [2] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ClickEvent"):FireServer(unpack(args))
+wait(0.1)
+end
+    end
+end)
+
+tab.newButton("Fly", "Click me!", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
+
+local tab = DrRayLibrary.newTab("Turkey", "ImageIdHere")
+
+tab.newToggle("auto farm", "Turkey world", true, function(toggleState)
+    if toggleState then
+        _G.auto = true
+    
+    
+    while _G.auto do
+local args = {
+    [1] = "Click",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ClickEvent"):FireServer(unpack(args))
+wait(0.1)
+end
+    else
+        _G.auto = false
+    
+    
+    while _G.auto do
+local args = {
+    [1] = "Click",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("ClickEvent"):FireServer(unpack(args))
+wait(0.1)
+end
+    end
+end)
+
+local tab = DrRayLibrary.newTab("teleport", "ImageIdHere")
+
+tab.newButton("teleport world 2", " Click me!", function()
+    local args = {
+    [1] = "1",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("teleport world 3", "Click me!", function()
+    local args = {
+    [1] = "3",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("teleport world 4", "Click me!", function()
+    local args = {
+    [1] = "5",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("Teleport world 1", "Click me!", function()
+    local args = {
+    [1] = "2",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("teleport world 5", "Click me!", function()
+    local args = {
+    [1] = "7",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("Teleport world 6", "Click me!", function()
+     local args = {
+    [1] = "9",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
+
+tab.newButton("teleport world 7", "Click me!", function()
+    local args = {
+    [1] = "11",
+    [2] = workspace:WaitForChild("teman1287"),
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("PortalC"):FireServer(unpack(args))
+end)
